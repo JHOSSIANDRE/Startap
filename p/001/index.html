@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StartTap NFC</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    body { background-color: #0f0f11; color: #ffffff; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; }
+    .card { background: #18181b; border: 1px solid #27272a; border-radius: 20px; width: 100%; max-width: 380px; padding: 28px 20px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+    .brand-logo { font-size: 22px; font-weight: 800; letter-spacing: 1.5px; color: #ffffff; margin-bottom: 24px; text-transform: uppercase; }
+    .btn { display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; padding: 14px; margin-bottom: 12px; border-radius: 12px; text-decoration: none; font-weight: 600; font-size: 15px; transition: transform 0.1s ease; }
+    .btn:active { transform: scale(0.98); }
+    
+    .btn-google { background-color: #ffffff; color: #1f1f1f; }
+    .btn-whatsapp { background-color: #25D366; color: #ffffff; }
+    .btn-vcf { background-color: #27272a; color: #ffffff; border: 1px solid #3f3f46; }
+    .btn-social { background-color: #1f1f23; color: #e4e4e7; border: 1px solid #27272a; }
+    
+    .divider { font-size: 12px; color: #71717a; text-transform: uppercase; letter-spacing: 1px; margin: 18px 0 14px 0; }
+    .footer { margin-top: 20px; font-size: 11px; color: #52525b; letter-spacing: 0.5px; }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="brand-logo">STARTTAP NFC</div>
+
+    <!-- 1. RESEÑAS DE GOOGLE -->
+    <a href="https://search.google.com/local/writereview?placeid=TU_PLACE_ID" target="_blank" class="btn btn-google">
+      ⭐ Reseña en Google
+    </a>
+
+    <!-- 2. WHATSAPP DIRECTO -->
+    <a href="https://wa.me/593999999999?text=Hola,%20me%20contacto%20desde%20la%20placa%20StartTap" target="_blank" class="btn btn-whatsapp">
+      💬 Escribir por WhatsApp
+    </a>
+
+    <!-- 3. GUARDAR CONTACTO (.VCF) -->
+    <a href="data:text/vcard;charset=utf-8,BEGIN%3AVCARD%0AVERSION%3A3.0%0AN%3AP%C3%A9rez%3BJuan%0AFN%3AJuan%20P%C3%A9rez%0AORG%3AMi%20Negocio%0ATEL%3BTYPE%3DCELL%3A%2B593999999999%0AEMAIL%3Acontacto%40minegocio.com%0AEND%3AVCARD" download="contacto.vcf" class="btn btn-vcf">
+      🎴 Guardar contacto en agenda
+    </a>
+
+    <div class="divider">Nuestras Redes</div>
+
+    <!-- 4. REDES SOCIALES -->
+    <a href="https://instagram.com/USUARIO" target="_blank" class="btn btn-social">Instagram</a>
+    <a href="https://tiktok.com/@USUARIO" target="_blank" class="btn btn-social">TikTok</a>
+
+    <div class="footer">Powered by StartTap</div>
+  </div>
+
+</body>
+</html>
